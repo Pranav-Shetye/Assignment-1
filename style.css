@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-style: italic;
+    background-color: whitesmoke;
+}
+
+nav{
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: navy;
+}
+
+.nav-link:hover{
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.3s; 
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+section.myself{
+    min-height: 70vh;
+    background: linear-gradient(to top right, #ccf5ff, white 50%, white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.photo{
+    height: 285px;
+    width: 285px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 50%;
+}
+
+.myself article{
+    height: 300px;
+    width: 700px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.myself article h2{
+    color: navy;
+}
+
+
+.myself i{
+   font-size: 25px;
+}
+
+.myself i:hover{
+    font-size: 28px;
+    transition: 0.3s; 
+}
+
+/* ---------------------------------------------------------------------------- */
+
+section.hobbies{
+    min-height: 70vh;
+    background: linear-gradient(to bottom right, #ccf5ff, white 50%, white);
+}
+
+.sec-name{
+    text-align: center;
+    color: navy;
+}
+
+.hobby-img{
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+}
+
+.hobby-img:hover{
+    height: 360px;
+    width: 310px;
+    transition: 0.3s;
+}
+
+
+.hobby-list{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hobby-card p{
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    text-shadow: 2px 1px navy;;
+    letter-spacing: 1.5px;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+footer{
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media (max-width: 848px) {
+    section.myself {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .photo {
+        height: 250px;
+        width: 250px;
+    }
+
+    section.myself{
+        min-height: 100vh;
+    }
+
+    .sec-name{
+        padding-top: 120px;
+    }
+
+    .myself article {
+        width: 90%;
+        text-align: center;
+    }
+
+
+    .hobby-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hobby-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hobby-card p {
+        font-size: large;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
